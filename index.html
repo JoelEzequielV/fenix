@@ -1,0 +1,305 @@
+<!-- <?php
+require_once __DIR__.'/x/vendor/autoload.php';
+require_once __DIR__.'/x/config.php'; 
+
+session_start();
+
+if (!empty($_SESSION['_contact_form_error'])) {
+    $error = $_SESSION['_contact_form_error'];
+    unset($_SESSION['_contact_form_error']);
+}
+
+if (!empty($_SESSION['_contact_form_success'])) {
+    $success = true;
+    unset($_SESSION['_contact_form_success']);
+}
+
+?> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--META DESCRIPTION-->
+    <meta name="description" content="diseño web fenix, agencia de desarrollo web en argentina, paginas webs baratas y accesibles">
+    <!--KEY-->
+    <meta name="keywords" content="agencia, desarrollo, web, responsive, argentina, barata, rapida, segura, creacion, paginas, diseño, logo, diseño web">
+    <title>Fenix Web</title>
+    <!---BOOTSTRAP --->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!--css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+    <!--fontawesome-->
+    <script src="https://kit.fontawesome.com/b0cf18c30b.js" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script> 
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <span class="navbar-text">
+            <i class="fa-brands fa-square-whatsapp"></i> WhatsApp 1160241586
+        </span>
+             <span class="navbar-text"> desarrollowebfenix@gmail.com </span>
+          </div>
+        </div>
+      </nav>
+      <div id="showcase">
+        <div class="containers">
+          <a class="navbar-brand" href="."><img src="img/logo4.png" alt="logo" class="logofx"></a>
+          <h1 class="titulo-uno">DISEÑO WEB FENIX</h1>
+          <p class="titulo-dos">Potencia tu Presencia en Línea con una Página Web Profesional</p>
+          
+        </div>
+      </div> 
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 160">
+        <path fill="#222222" fill-opacity="1" d="M0,32L120,42.7C240,53,480,74.5,720,80C960,85.5,1200,74.5,1320,69.3L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
+      </svg>
+
+    </header>
+
+    <!---SERVICIOS-->
+
+ 
+    <div class="servicios">
+        <h2>Nuestros servicios</h2>
+        <p>Consultar por mas servicios.</p>
+    </div>
+
+  <section>
+        <div class="card-container">
+            <div class="card">
+                <i class="fas fa-pen-to-square"></i>
+                <h2>Diseño gráfico</h2>
+                <p>Diseñamos logos, banners, infografias, flyers y todo lo que necesites para tu web y redes sociales. Consultar planes.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-code"></i>
+                <h2>Diseño web</h2>
+                <p>Desde sitios web básicos hasta páginas complejas con secciones, formularios, imágenes y todo lo necesario para tu sitio. </p>
+            </div>
+            <div class="card">
+                <i class="fas fa-globe"></i>
+                <h2>Tu sitio en linea</h2>
+                <p>Subimos tu sitio web a nuestros servidores seguros y confiables, y te registramos un dominio (opcional).</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-laptop-code"></i> 
+                <h2>Mantenimiento web</h2>
+                <p>Realizamos servicio de mantenimiento completo a su sitio web. Consulte por planes.</p>
+            </div>
+        </div>
+ </section>
+
+ <section>
+    <div class="quienes-somos">
+        <div class="texto">
+            <h2>Sobre nosotros</h2>
+            <h3>Somos una agencia con sede en Buenos Aires, Argentina,
+                especializada en el desarrollo web. </h3>
+            <p>
+                Nos dedicamos apasionadamente
+                a crear soluciones digitales innovadoras que impulsan el éxito de
+                nuestros clientes. Con un enfoque centrado en la calidad y la personalización,
+                ofrecemos servicios integrales que abarcan desde el diseño y desarrollo de
+                sitios web hasta la implementación de estrategias digitales efectivas.
+                Confía en nosotros para transformar tus ideas en realidades digitales
+                que destacan en el competitivo mundo online.
+               </p>
+        </div>
+        <img src="img/quienesomos.jpg" class="image"   style="height: 25rem;object-fit: cover;" alt="Imagen de ejemplo">
+    </div>
+ </section>
+
+ <!---tecnologias-->
+ <section id="tecnos">
+ <h2>Tecnologías</h2>
+ <p style="text-align: center;">Estas tecnologías utilizamos para la creación y optimización de sitios webs.</p>
+ <div class="slider">
+ <div class="slide-track">
+
+   <div class="slide">
+     <img src="tec/01.png" height="100" width="250" alt="" />
+   </div>
+   <div class="slide">
+     <img src="tec/02.png" height="100" width="250" alt="" />
+   </div>
+   <div class="slide">
+     <img src="tec/03.png" height="100" width="250" alt="" />
+   </div>
+   <div class="slide">
+     <img src="tec/04.png" height="100" width="250" alt="" />
+   </div>
+   <div class="slide">
+     <img src="tec/05.png" height="100" width="250" alt="" />
+   </div>
+   <div class="slide">
+     <img src="tec/06.png" height="100" width="250" alt="" />
+   </div>
+   <div class="slide">
+     <img src="tec/07.png" height="100" width="250" alt="" />
+   </div>
+   <div class="slide">
+     <img src="tec/08.png" height="100" width="250" alt="" />
+   </div>
+
+   <div class="slide">
+     <img src="tec/01.png" height="100" width="250" alt="" />
+   </div>
+   <div class="slide">
+     <img src="tec/02.png" height="100" width="250" alt="" />
+   </div>
+   <div class="slide">
+     <img src="tec/03.png" height="100" width="250" alt="" />
+   </div>
+   <div class="slide">
+     <img src="tec/04.png" height="100" width="250" alt="" />
+   </div>
+   <div class="slide">
+     <img src="tec/05.png" height="100" width="250" alt="" />
+   </div>
+   <div class="slide">
+     <img src="tec/06.png" height="100" width="250" alt="" />
+   </div>
+   <div class="slide">
+     <img src="tec/07.png" height="100" width="250" alt="" />
+   </div>
+   <div class="slide">
+     <img src="tec/08.png" height="100" width="250" alt="" />
+   </div>
+   <p></p>
+ </div>
+</div>
+ </section>
+
+ <!---Webs realizadas-->
+ <h2 style="text-align: center;">Algunos de nuestros trabajos:</h2>
+<section id="testimonios">
+
+<figure class="snip1533">
+  <figcaption>
+    <blockquote>
+      <p></p>
+    </blockquote>
+    <h3><a href="." target="_blank" rel="noopener noreferrer" class="textdnone">Portafolio</a></h3>
+    <h7 class="h7font">by DiseñoWebFenix</h7>
+  </figcaption>
+</figure>
+
+<figure class="snip1533">
+  <figcaption>
+    <blockquote>
+      <p></p>
+    </blockquote>
+    <h3><a href="http://www.bailaokc.com" target="_blank" rel="noopener noreferrer" class="textdnone">BailaOKC</a></h3>
+    <h7 class="h7font">by DiseñoWebFenix</h7>
+  </figcaption>
+</figure>
+
+<figure class="snip1533">
+  <figcaption>
+    <blockquote>
+      <p></p>
+    </blockquote>
+    <h3><a href="." target="_blank" rel="noopener noreferrer" class="textdnone">DiseñoWebFenix</a></h3>
+    <h7 class="h7font">by DiseñoWebFenix</h7>
+  </figcaption>
+</figure>
+
+<figure class="snip1533">
+  <figcaption>
+    <blockquote>
+      <p></p>
+    </blockquote>
+    <h3><a href="." target="_blank" rel="noopener noreferrer" class="textdnone">DiseñoWebFenix</a></h3>
+    <h7 class="h7font">by DiseñoWebFenix</h7>
+  </figcaption>
+</figure>
+
+</section>
+
+
+
+<!---contact form-->
+ <section id="contact">
+    <div class="container">
+        <div class="contact-box">
+                   
+            <p style=""></p>
+            <h4>Hola!</h4>
+            <h4>¿Necesitas cotizar una web?</h4>
+            <p>Completa el formulario y nos contactaremos a la brevedad </p>
+          
+            <form>
+
+                         <div class="form-group">
+                           <label for="name">Nombre:</label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="">
+                        </div>
+
+                        <div class="form-group">
+                         <label for="name">Su Correo:</label>
+                            <input type="email" name="email" id="email" class="form-control" placeholder="">
+                        </div>
+
+                        <div class="form-group">
+                           <label for="name">Asunto:</label>
+                            <input type="text" name="subject" id="subject" class="form-control" placeholder="">
+                        </div>
+
+                        <div class="form-group">
+                           <label for="name">Mensaje:</label>
+                            <textarea name="message" id="message" class="form-control" rows="3" placeholder=""></textarea>
+                        </div>
+
+                        <div class="form-group" style="">
+                            <div class="g-recaptcha" data-sitekey="6LcWggkqAAAAAIesSrIj8rZUCwFyV5u0aZkQoBds" style="transform:scale(0.75);"></div>
+                        </div>
+                        <button class="btn btn-dark btn-block" id="btnEnviar">Enviar</button>
+                        <!-- <input type="button" class="btn btn-dark btn-block" id="btnEnviar" value="Enviar"> -->
+                       <p></p>
+            </form>
+
+        </div>
+    </div>
+ </section>
+
+<!---sociales-->
+ <section>
+    <div id="redes-sociales">
+    <div class="redes">
+      <h3>Redes sociales</h3>
+      <p>¡Síguenos en nuestras redes sociales!</p>
+      <div class="social-link">
+        <a href="https://www.facebook.com/profile.php?id=61558973519539"> <i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/disenowebfenix/"> <i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/1160241586"> <i class="fab fa-whatsapp"></i></a>
+      </div>  
+    </div>
+  </div>
+</section>
+
+<!---footer-->
+  <footer class="footer">
+    <div class="footer-copy">
+      <p>Copyright &copy; 2025 Diseño Web Fénix. Diseñado por <span style="color:#b3bcf5;">Celeste Courtade.</span></p>  
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider-extensions.min.js"></script>
+  <script src="main.js" ></script>
+  <script src="app.js" ></script>
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+ <a href="https://wa.me/+5491160241586" class="whatsapp-float" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+</body>
+</html>
